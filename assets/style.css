@@ -9,7 +9,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
-  background:var(--bg);
+  background: linear-gradient(to right, #d9e8ff, #fde6d3);
   color:var(--text);
   font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;
   letter-spacing:0.1px;
