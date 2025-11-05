@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rabbit & Wolf — Search</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/search.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">Rabbit &amp; Wolf</div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/search.html">Search</a>
+        <a href="/subscribe.html">Subscribe</a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h1>Search</h1>
+      <div class="search-wrap">
+        <div class="search-box">
+          <input id="q" class="search-input" type="search" placeholder="Search titles, summaries, tags, and content…">
+        </div>
+        <div id="results"></div>
+      </div>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> Rabbit &amp; Wolf</footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="/assets/search.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rabbit & Wolf — Subscribe</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">Rabbit &amp; Wolf</div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/search.html">Search</a>
+        <a href="/subscribe.html">Subscribe</a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h1>Subscribe</h1>
+      <p class="meta">Choose email updates (Buttondown/Substack) or just use RSS.</p>
+
+      <h2>Email (Buttondown)</h2>
+      <p>Create a free Buttondown account, then replace <code>your-buttondown-username</code> below:</p>
+      <form action="https://buttondown.email/api/emails/embed-subscribe/your-buttondown-username" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/your-buttondown-username','popupwindow')">
+        <label for="bd-email">Email:</label><br>
+        <input type="email" name="email" id="bd-email" required style="padding:8px;border:1px solid #ccc;border-radius:8px;width:260px">
+        <input type="hidden" value="1" name="embed"/>
+        <button style="padding:8px 12px;margin-left:8px;border:1px solid #222;border-radius:10px;background:#fff">Subscribe</button>
+      </form>
+      <p class="meta">We’ll send occasional updates. Unsubscribe anytime.</p>
+
+      <hr>
+
+      <h2>Email (Substack)</h2>
+      <p>Create a Substack, then replace <code>your-substack</code> in the iframe URL:</p>
+      <iframe src="https://your-substack.substack.com/embed" width="480" height="220" style="border:1px solid #e5e5e5;background:#fff;border-radius:12px" frameborder="0" scrolling="no"></iframe>
+
+      <hr>
+
+      <h2>RSS</h2>
+      <p>Prefer feeds? Add this URL to your reader:</p>
+      <pre><code>https://thyrondexter.github.io/feed.xml</code></pre>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> Rabbit &amp; Wolf</footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </div>
+</body>
+</html>
