@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Forge &amp; Quill</title>
+    <link>https://yourname.github.io/</link>
+    <description>Works in public: essays, systems, design notes.</description>
+    <language>en-us</language>
+    <item>
+      <title>Planting a Banner Online</title>
+      <link>https://yourname.github.io/posts/first-post.html</link>
+      <pubDate>Wed, 05 Nov 2025 12:00:00 +0000</pubDate>
+      <guid>https://yourname.github.io/posts/first-post.html</guid>
+      <description><![CDATA[You don’t need permission to build in public. Put a stake in the ground and ship fragments.]]></description>
+    </item>
+  </channel>
+</rss>

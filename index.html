@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forge & Quill — Works in Public</title>
+  <meta name="description" content="A builder's notebook: research notes, game design, worldbuilding, and essays.">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">Forge &amp; Quill</div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="kicker">Public Workshop</div>
+        <h1>Works in Progress. In the open.</h1>
+        <p>This is a simple, no‑build site for publishing creative work: essays, design notes, mechanics, and research‑adjacent thoughts. Each post is a plain HTML file in <code>/posts</code>. Keep shipping.</p>
+        <p><a class="btn" href="/posts/first-post.html">Read the sample post →</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Latest posts</h2>
+        <ul class="post-list">
+          <li><a href="/posts/first-post.html">Sample: Planting a Banner Online</a> <span class="meta">— 2025‑11‑05</span></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      © <span id="year"></span> Forge &amp; Quill. Built as a static site. No frameworks. All signal.
+      <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+  </div>
+</body>
+</html>
