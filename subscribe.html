@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rabbit & Wolf — Subscribe</title>
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -22,28 +21,34 @@
 
     <main class="card">
       <h1>Subscribe</h1>
-      <p class="meta">Choose e-mail updates (Buttondown/Substack) or just use RSS.</p>
+      <p class="meta">A quiet list. No platform. No algorithm. Letters from the workshop.</p>
 
-      <h2>Email (Buttondown)</h2>
-      <p>Create a free Buttondown account, then replace <code>your-buttondown-username</code> below:</p>
-      <form action="https://buttondown.email/api/emails/embed-subscribe/thyrondexter" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/thyrondexter','popupwindow')">
-        <label for="bd-email">Email:</label><br>
-        <input type="email" name="email" id="bd-email" required style="padding:8px;border:1px solid #ccc;border-radius:8px;width:260px">
-        <input type="hidden" value="1" name="embed"/>
-        <button style="padding:8px 12px;margin-left:8px;border:1px solid #222;border-radius:10px;background:#fff">Subscribe</button>
+      <!-- FormSubmit will email submissions to your Proton address -->
+      <form action="https://formsubmit.co/thyrondexter@proton.me" method="POST" style="margin-top:20px;">
+        <!-- Routing & UX -->
+        <input type="hidden" name="_subject" value="New Rabbit & Wolf Subscriber">
+        <input type="hidden" name="_autoresponse" value="Thank you for subscribing to Rabbit & Wolf. Your presence is seen.">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://thyrondexter.github.io/thanks.html">
+
+        <!-- Honeypot (bot trap) -->
+        <input type="text" name="_honey" style="display:none">
+
+        <label for="email" class="meta">Your email</label><br>
+        <input type="email" name="email" id="email" required
+               placeholder="you@domain.com"
+               style="padding:10px;border:1px solid #ccc;border-radius:8px;width:280px;margin-top:8px;">
+        <button type="submit"
+                style="padding:10px 14px;margin-left:8px;border:1px solid #222;border-radius:10px;background:#fff;">
+          Subscribe
+        </button>
       </form>
-      <p class="meta">We’ll send occasional updates. Unsubscribe anytime.</p>
 
-      <hr>
+      <p class="meta" style="margin-top:12px;">We send only meaningful letters. To unsubscribe, reply with one word: <strong>stop</strong>.</p>
 
-      <h2>Email (Substack)</h2>
-      <p>Create a Substack, then replace <code>your-substack</code> in the iframe URL:</p>
-      <iframe src="https://rabbitwolf.substack.com/embed" width="480" height="220" style="border:1px solid #e5e5e5;background:#fff;border-radius:12px" frameborder="0" scrolling="no"></iframe>
+      <hr style="margin:24px 0;">
 
-      <hr>
-
-      <h2>RSS</h2>
-      <p>Prefer feeds? Add this URL to your reader:</p>
+      <h2>RSS (no email)</h2>
       <pre><code>https://thyrondexter.github.io/feed.xml</code></pre>
     </main>
 

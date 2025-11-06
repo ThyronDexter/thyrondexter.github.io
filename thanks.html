@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rabbit & Wolf — Thank You</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">Rabbit &amp; Wolf</div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/search.html">Search</a>
+        <a href="/subscribe.html">Subscribe</a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h1>You're on the list.</h1>
+      <p class="meta">Check your inbox for a confirmation note. If it isn't there in a minute, check spam.</p>
+      <p><a class="btn" href="/">Back to home →</a></p>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> Rabbit &amp; Wolf</footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </div>
+</body>
+</html>
