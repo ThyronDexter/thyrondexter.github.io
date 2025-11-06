@@ -18,7 +18,9 @@ example.com
 
 ## Posting
 Run the script
+```
 python new_post.py "title" --summary "summary" --tags "tags,tags"
+```
 
 ## Style
 - Edit `/assets/style.css` to tweak look and spacing.
