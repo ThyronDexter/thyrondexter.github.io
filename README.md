@@ -1,4 +1,4 @@
-# Forge & Quill — Static Site Starter
+# Rabbit & Wolf — Static Website Starter
 
 A tiny, no-build website for publishing essays, notes, and design work. Pure HTML/CSS so you can deploy anywhere (GitHub Pages recommended).
 
@@ -17,10 +17,8 @@ example.com
 - Point DNS to GitHub Pages IPs (or use Cloudflare proxy + CNAME to yourname.github.io).
 
 ## Posting
-- Copy `/posts/first-post.html` and rename it, e.g. `2025-11-06-my-topic.html`.
-- Edit the title inside and the date in both the `<title>` and the `<meta name="date">` tag, and in the visible "Published" line.
-- Update the posts list in `/index.html` and add a new `<li>` link.
-- Optionally update `/feed.xml` with a new `<item>` so RSS readers pick it up.
+Run the script
+python new_post.py "title" --summary "summary" --tags "tags,tags"
 
 ## Style
 - Edit `/assets/style.css` to tweak look and spacing.
