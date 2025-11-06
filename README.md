@@ -1,4 +1,4 @@
-# Rabbit & Wolf — Static Website Starter
+# Rabbit & Wolf — Builder's Simple Website
 
 A tiny, no-build website for publishing essays, notes, and design work. Pure HTML/CSS so you can deploy anywhere (GitHub Pages recommended).
 
